@@ -23,6 +23,7 @@ Background: movies have been added to database
 
 Scenario: sort movies alphabetically
   # your steps here
+  @movies = Movie.find_all_by_rating(Movie.all_ratings, 'title')
 
 Scenario: sort movies in increasing order of release date
   # your steps here
